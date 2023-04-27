@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --loader esbuild-register/loader -r esbuild-register src/main.ts"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/patlux/kaa#readme",
   "dependencies": {
+    "esbuild-register": "^3.4.2",
     "zod": "^3.21.4"
   }
 }
